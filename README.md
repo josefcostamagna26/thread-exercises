@@ -60,5 +60,37 @@ Compile-time parameters (defined in `libroMastro.h`):
 This project uses a **Makefile** for compilation.
 
 ### Build
-```bash
+```make```
+This will generate the executable:
+
+master → entry point of the simulation
+
+Run
+```./master```
+
+
+Make sure a valid parameters.txt file is present in the same directory before running.
+
+Clean
+```make clean```
+
+
+Removes object files and executables.
+
+📂 Repository Structure
+├── master.c / master.h        # Master process (controller)
+├── utente.c / utente.h        # User process logic
+├── nodo.c / nodo.h            # Node process logic
+├── libroMastro.c / libroMastro.h # Ledger (shared memory + IPC)
+├── makefile                   # Build configuration
+├── parameters.txt             # Runtime configuration file
+├── Progetto_SO_2021_22.pdf    # Original assignment specification
+
+📖 Notes
+
+Developed for the Operating Systems course at the University of Turin.
+
+Code is written in ANSI C89 with POSIX IPC mechanisms.
+
+The project emphasizes concurrency, synchronization, and inter-process communication.
 make
