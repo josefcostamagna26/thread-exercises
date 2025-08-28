@@ -65,20 +65,20 @@ This will generate the executable:
 
 master → entry point of the simulation
 
-###Run
+### Run
 ```./master```
 
 
 Make sure a valid parameters.txt file is present in the same directory before running.
 
-###Clean
+### Clean
 ```make clean```
 
 
 Removes object files and executables.
 
 
-##Notes
+## Notes
 
 Developed for the Operating Systems course at the University of Turin.
 
